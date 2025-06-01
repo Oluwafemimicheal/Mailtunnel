@@ -1,0 +1,84 @@
+[
+
+  {
+    "id": 1,
+    "name": "Abuja Yam",
+    "image": "../src/assets/market-view-3.jpg",
+    "price": "2000",
+    "oldPrice": "2300",
+    "market": "Atan Ota Market"
+  },
+  {
+    "id": 2,
+    "name": "Abuja Yam",
+    "image": "../src/assets/market-view-6.jpg",
+    "price": "2000",
+    "oldPrice": "2300",
+    "market": "Atan Ota Market"
+  },
+  {
+    "id": 3,
+    "name": "Abuja Yam",
+    "image": "../src/assets/market-view-8.jpg",
+    "price": "2000",
+    "oldPrice": "2300",
+    "market": "Atan Ota Market"
+  },
+  {
+    "id": 4,
+    "name": "Abuja Yam",
+    "image": "../src/assets/market-view-2.jpg",
+    "price": "2000",
+    "oldPrice": "2300",
+    "market": "Atan Ota Market"
+  },
+  {
+    "id": 5,
+    "name": "Abuja Yam",
+    "image": "../src/assets/market-view-10.jpg",
+    "price": "2000",
+    "oldPrice": "2300",
+    "market": "Atan Ota Market"
+  },
+  {
+    "id": 6,
+    "name": "Abuja Yam",
+    "image": "../src/assets/market-view-3.jpg",
+    "price": "2000",
+    "oldPrice": "2300",
+    "market": "Ogun Market"
+  },
+  {
+    "id": 7,
+    "name": "Abuja Yam",
+    "image": "../src/assets/market-view-1.jpg",
+    "price": "2000",
+    "oldPrice": "2300",
+    "market": "Aubja Market"
+  },
+  {
+    "id": 8,
+    "name": "Paint of Rice",
+    "image": "../src/assets/market-view-5.jpg",
+    "price": "5600",
+    "oldPrice": "5800",
+    "market": "Lagos Market"
+  },
+  {
+    "id": 9,
+    "name": "Abuja Yam",
+    "image": "../src/assets/market-view-8.jpg",
+    "price": "2000",
+    "oldPrice": "2300",
+    "market": "Atan Ota Market"
+  },
+  {
+    "id": 10,
+    "name": "Abuja Yam",
+    "image": "../src/assets/market-view-9.jpg",
+    "price": "2000",
+    "oldPrice": "2300",
+    "market": "Atan Ota Market"
+  }
+]
+

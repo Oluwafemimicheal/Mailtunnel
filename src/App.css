@@ -1,0 +1,13 @@
+.about-hero {
+  position: static;
+  background-image: url("./assets/market-view-6.jpg");
+  background-position: 100%;
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+.contact-hero {
+  background-image: url("./assets/market-view-8.jpg");
+  background-position: 100%;
+  background-repeat: no-repeat;
+  background-size: cover;
+}
