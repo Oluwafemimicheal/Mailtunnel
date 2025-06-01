@@ -1,26 +1,34 @@
-import { FaBars, FaCartPlus, FaUser, FaUserAlt } from "react-icons/fa";
+import {
+  FaBars,
+  FaCartPlus,
+  FaChevronDown,
+  FaChevronUp,
+  FaUser,
+  FaUserAlt,
+} from "react-icons/fa";
 import { Link } from "react-router";
 import { Button } from "./UseCom";
 
 const Navbar = () => {
   return (
-    <nav className="container p-0 mx-auto flex justify-between items-center ">
+    <nav className="w-[1300px] mx-auto  py-1 flex justify-between items-center ">
       <div className="flex items-center gap-10">
         <Link to={"/"}>
           <h1 className="text-4xl font-bold">MailTunnel</h1>
         </Link>
         <ul className="hidden lg:bg-[#1E1E1E0F] py-3 px-5 rounded-lg lg:ml-10 lg:flex gap-12 text-[14px] text-[#1E1E1E]">
           <Link to={"about"} className="hover:opacity-40">
-            About
+            Features
+            <FaChevronDown size={10} />
           </Link>
           <Link to={"order"} className="hover:opacity-40">
-            Order Item
+            Use Cases <FaChevronDown size={10} />
           </Link>
           <Link to={"market"} className="hover:opacity-40">
-            Market
+            Resources <FaChevronDown size={10} />
           </Link>
           <Link to={"contact"} className="hover:opacity-40">
-            Contact
+            Pricing <FaChevronDown size={10} />
           </Link>
         </ul>
       </div>

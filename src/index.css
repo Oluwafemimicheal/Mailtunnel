@@ -29,6 +29,3 @@ select {
   cursor: pointer;
   transition: border 0.3s ease;
 }
-.swiper-pagination-bullets span {
-  background-color: oklch(55.5% 0.163 48.998) !important;
-}
