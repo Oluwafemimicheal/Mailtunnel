@@ -120,11 +120,10 @@ export const Hero = () => {
         <UserView />
       </section>
       <section className="py-30 h-auto">
-        <div className="w-[1300px] mx-auto grid grid-rows-2 gap-5 pb-10">
+        <div className="w-[1300px] mx-auto grid grid-rows-2 gap-5">
           <h1 className="text-[8rem] text-[#1e1e1e] font-bold leading-36">
             Moving to Kit
             <br /> couldn't be <span className="text-[#44b1ff]">easier</span>
-            <span className="text-white">.</span>
           </h1>
           <div className="w-5/12 text-[20px] text-[#1e1e1e] justify-self-end">
             <p>
@@ -135,12 +134,16 @@ export const Hero = () => {
               move.
             </p>
             <div className="flex gap-5 items-center mt-5">
-              <Button bg="#1e1e1e" text={"Start free trial"} />
+              <Button
+                bg="#1e1e1e"
+                textColor="#ffffff"
+                text={"Request migration"}
+              />
             </div>
           </div>
         </div>
       </section>
-      <section className="py-40">
+      <section className="pb-40">
         <div className="w-[1300px] mx-auto mt-20 h-auto rounded-2xl bg-[#1e1e1e] text-white p-16  shadow-lg  flex flex-col justify-center items-center gap-5">
           <h1 className="text-6xl font-bold  text-center">
             Every email is impactful
