@@ -123,7 +123,7 @@ export const Hero = () => {
       <section className="py-30 h-auto">
         <div className="w-[1300px] mx-auto grid  gap-5">
           <h1 className="text-[7rem] text-[#1e1e1e] font-bold leading-32">
-            <LiaAccessibleIcon size={250} />
+            <LiaAccessibleIcon size={200} />
             Moving to Mail <br />
             Tunnel couldn't <br />
             be <span className="text-[#44b1ff]">easier</span>
