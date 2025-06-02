@@ -119,6 +119,18 @@ export const Hero = () => {
         <UserView />
         <UserView />
       </section>
+      <section className="py-40">
+        <div className="w-[1300px] mx-auto mt-20 h-auto rounded-2xl bg-[#1e1e1e] text-white p-16  shadow-lg  flex flex-col justify-center items-center gap-5">
+          <h1 className="text-6xl font-bold  text-center">
+            Every email is impactful
+          </h1>
+          <p>Creators who mean business are powerful Mail Tunnel</p>
+          <div className="flex gap-5 items-center mt-5">
+            <Button bg="#44b1ff" text={"Start free trial"} />
+          </div>
+          <small>No credit card required</small>
+        </div>
+      </section>
     </div>
   );
 };

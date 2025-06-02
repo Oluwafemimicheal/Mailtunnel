@@ -12,7 +12,7 @@ function App() {
         <main className="min-h-screen lg:p-0 py-6 mt-[70px]">
           <Outlet />
         </main>
-        <footer className="bg-amber-950 p-10">
+        <footer className="bg-[#1e1e1e] p-10">
           <Footer />
         </footer>
       </div>
