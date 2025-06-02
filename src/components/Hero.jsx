@@ -4,6 +4,7 @@ import "swiper/css/pagination";
 import "swiper/css/navigation";
 import { Pagination, Navigation, Autoplay } from "swiper/modules";
 import { Button, SwiperCard, UserView } from "./UseCom";
+import { LiaAccessibleIcon } from "react-icons/lia";
 
 export const Hero = () => {
   return (
@@ -120,18 +121,20 @@ export const Hero = () => {
         <UserView />
       </section>
       <section className="py-30 h-auto">
-        <div className="w-[1300px] mx-auto grid grid-rows-2 gap-5">
-          <h1 className="text-[8rem] text-[#1e1e1e] font-bold leading-36">
-            Moving to Kit
-            <br /> couldn't be <span className="text-[#44b1ff]">easier</span>
+        <div className="w-[1300px] mx-auto grid  gap-5">
+          <h1 className="text-[7rem] text-[#1e1e1e] font-bold leading-32">
+            <LiaAccessibleIcon size={250} />
+            Moving to Mail <br />
+            Tunnel couldn't <br />
+            be <span className="text-[#44b1ff]">easier</span>
           </h1>
           <div className="w-5/12 text-[20px] text-[#1e1e1e] justify-self-end">
             <p>
               Moving to a new email marketing platform can be daunting. That's
-              why Kit offers a free migration service for creators with over
-              5,000 subscribers on our paid plans. Our team handles everything
-              from subscriber lists to automations, so you have a stress-free
-              move.
+              why Mail Tunnel offers a free migration service for creators with
+              over 5,000 subscribers on our paid plans. Our team handles
+              everything from subscriber lists to automation, so you have a
+              stress-free move.
             </p>
             <div className="flex gap-5 items-center mt-5">
               <Button
