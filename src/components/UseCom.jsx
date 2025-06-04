@@ -37,7 +37,9 @@ export const UserView = ({
               business by offering high-quality, free content and turning casual
               followers into loyal fans.`,
   name = "Your name",
-  work = ""
+  work = "Am a developer",
+  whatYouDo = "my work description",
+  whatToSay="I couldnt have done it without mailtunnel"
 }) => {
   return (
     <div className="py-10">
@@ -54,7 +56,7 @@ export const UserView = ({
             <p className="mb-3">{description}</p>
 
             <div className="flex gap-5 items-center mt-5 mb-3">
-              <Button bg="#44b1ff" text={"Start free trial"} opacity={"0.2"} />
+              <Button bg="#44b1ff" text={"Start free trial"} />
             </div>
             <small className="text-[#1e1e1e90] ">No credit card required</small>
           </div>
@@ -67,9 +69,7 @@ export const UserView = ({
               <p>{work}</p>
             </div>
             <p>
-              “I'm constantly telling people about Kit. Even if it's a small
-              list. You can have an entire business with 100 email subscribers
-              if they're the right ones.”
+              {whatYouDo}
             </p>
           </div>
           <div></div>
@@ -136,13 +136,13 @@ export const UserView = ({
         <div className="mt-20 h-auto rounded-2xl bg-blue-300 p-4 py-20 shadow-lg  flex flex-col justify-center items-center gap-5">
           <FaQuoteLeft size={35} color="brown" />
           <h1 className="text-5xl font-bold  text-center text-black">
-            I wouldn't have a business without Kit.
+            {whatToSay}
           </h1>
           <div className="flex items-center gap-5 mt-5 ">
             <div className="image mb-5 size-20  bg-gray-300 rounded-md"></div>
             <div>
-              <h3>Lauren Kay</h3>
-              <p>Author & writing guide</p>
+              <h3>{name}</h3>
+              <p>{work}</p>
             </div>
           </div>
         </div>
