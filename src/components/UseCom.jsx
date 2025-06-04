@@ -39,7 +39,7 @@ export const UserView = ({
   name = "Your name",
   work = "Am a developer",
   whatYouDo = "my work description",
-  whatToSay="I couldnt have done it without mailtunnel"
+  whatToSay = "I couldnt have done it without mailtunnel",
 }) => {
   return (
     <div className="py-10">
@@ -68,9 +68,7 @@ export const UserView = ({
               <h3 className="font-bold">{name}</h3>
               <p>{work}</p>
             </div>
-            <p>
-              {whatYouDo}
-            </p>
+            <p>{whatYouDo}</p>
           </div>
           <div></div>
           <div className="bg-gray-400 rounded-lg h-[610px] col-span-3"></div>

@@ -5,7 +5,7 @@ import "swiper/css/navigation";
 import { Pagination, Navigation, Autoplay } from "swiper/modules";
 import { Button, SwiperCard, UserView } from "./UseCom";
 import { LiaAccessibleIcon } from "react-icons/lia";
-import { FaDashcube } from "react-icons/fa";
+import { FaAccusoft, FaDashcube } from "react-icons/fa";
 
 export const Hero = () => {
   return (
@@ -120,6 +120,19 @@ export const Hero = () => {
         <UserView />
         <UserView />
         <UserView />
+      </section>
+      <section className="pb-40">
+        <div className="w-[1300px] mx-auto mt-20 h-auto   text-[#1e1e1e] p-16  flex  justify-between items-center gap-10">
+          <div>
+            <FaAccusoft size={100} />
+          </div>
+          <div>
+            <h1 className="text-6xl font-bold  text-left">
+              Kit is the email-first operating system for creators who mean
+              business
+            </h1>
+          </div>
+        </div>
       </section>
       <section className="py-20">
         <div className="w-[1300px] mx-auto grid  grid-cols-2 mt-20 h-auto rounded-2xl item-center  bg-blue-400 text-black p-16  shadow-lg gap-5">
