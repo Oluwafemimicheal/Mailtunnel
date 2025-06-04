@@ -31,7 +31,14 @@ export const SwiperCard = () => {
 };
 
 import { FaCheck, FaQuoteLeft } from "react-icons/fa";
-export const UserView = () => {
+export const UserView = ({
+  heading = "Lauren used social media and Kit to grow her email list from 500 to 25000",
+  description = ` Lauren turned her large social following into a sustainable
+              business by offering high-quality, free content and turning casual
+              followers into loyal fans.`,
+  name = "Your name",
+  work = ""
+}) => {
   return (
     <div className="py-10">
       <div className="w-[1300px] mx-auto ">
@@ -40,18 +47,11 @@ export const UserView = () => {
         </span>
         <div className="grid grid-cols-7 gap-10 mt-5">
           <div className="col-span-3">
-            <h1 className="text-[3rem] font-bold leading-14">
-              Lauren used social media and Kit to grow her email list from 500
-              to 25,000
-            </h1>
+            <h1 className="text-[3rem] font-bold leading-14">{heading}</h1>
           </div>
           <div></div>
           <div className="col-span-3">
-            <p className="mb-3">
-              Lauren turned her large social following into a sustainable
-              business by offering high-quality, free content and turning casual
-              followers into loyal fans.
-            </p>
+            <p className="mb-3">{description}</p>
 
             <div className="flex gap-5 items-center mt-5 mb-3">
               <Button bg="#44b1ff" text={"Start free trial"} opacity={"0.2"} />
@@ -63,8 +63,8 @@ export const UserView = () => {
           <div className="flex flex-col justify-between col-span-3">
             <div>
               <div className="w-[220px] h-[220px] bg-red-400 rounded-md mb-5"></div>
-              <h3 className="font-bold">Lauren Kay</h3>
-              <p>Writing guide & author</p>
+              <h3 className="font-bold">{name}</h3>
+              <p>{work}</p>
             </div>
             <p>
               “I'm constantly telling people about Kit. Even if it's a small
@@ -75,7 +75,7 @@ export const UserView = () => {
           <div></div>
           <div className="bg-gray-400 rounded-lg h-[610px] col-span-3"></div>
         </div>
-        <div className="grid grid-cols-3 grid-rows-2 gap-10 h-[500px] mt-10 ">
+        <div className="grid grid-cols-3 grid-rows-2 gap-5 h-[500px] mt-10 ">
           <div className="row-span-2  rounded-lg bg-white p-8">
             <h1 className="text-6xl font-bold">What's in MailTunnel?</h1>
             <ul className="mt-10">

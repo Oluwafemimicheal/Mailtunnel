@@ -5,6 +5,7 @@ import "swiper/css/navigation";
 import { Pagination, Navigation, Autoplay } from "swiper/modules";
 import { Button, SwiperCard, UserView } from "./UseCom";
 import { LiaAccessibleIcon } from "react-icons/lia";
+import { FaDashcube } from "react-icons/fa";
 
 export const Hero = () => {
   return (
@@ -119,6 +120,24 @@ export const Hero = () => {
         <UserView />
         <UserView />
         <UserView />
+      </section>
+      <section className="py-20">
+        <div className="w-[1300px] mx-auto grid  grid-cols-2 mt-20 h-auto rounded-2xl item-center  bg-blue-400 text-black p-16  shadow-lg gap-5">
+          <div>
+            <h1 className="text-6xl font-bold  text-left">Ready. Set. Send.</h1>
+            <p>
+              Kit flexes with you as you grow. Manage up to 10,000 subscribers
+              for free, or upgrade to grow an unlimited list and access all
+              functionality.
+            </p>
+            <div className="flex gap-5 items-center mt-5">
+              <Button bg="#44b1ff" text={"See all plans"} />
+            </div>
+          </div>
+          <div className="justify-self-end opacity-55">
+            <FaDashcube size={250} />
+          </div>
+        </div>
       </section>
       <section className="py-30 h-auto">
         <div className="w-[1300px] mx-auto grid  gap-5">
