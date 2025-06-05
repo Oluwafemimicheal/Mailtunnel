@@ -117,9 +117,9 @@ export const Hero = () => {
       </section>
       {/* Market items */}
       <section className="py-10 bg-zinc-200">
-        <UserView />
-        <UserView />
-        <UserView />
+        <UserView bg="#b9a741" />
+        <UserView bg="#737bd2" />
+        <UserView bg="#641967"/>
       </section>
       <section className="pb-40">
         <div className="w-[1300px] mx-auto mt-20 h-auto   text-[#1e1e1e] p-16  flex  justify-between items-center gap-10">
