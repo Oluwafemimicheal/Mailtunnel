@@ -82,25 +82,37 @@ export const UserView = ({
             <h1 className="text-6xl font-bold">What's in MailTunnel?</h1>
             <ul className="mt-10">
               <li className="flex items-center gap-5 mb-8">
-                <span className="size-8 flex justify-center items-center bg-orange-400 rounded-full">
+                <span
+                  className="size-8 flex justify-center items-center rounded-full"
+                  style={bgStyle}
+                >
                   <FaCheck color="white" />
                 </span>
                 Creator Profile
               </li>
               <li className="flex items-center gap-5 mb-8">
-                <span className="size-8 flex justify-center items-center bg-orange-400 rounded-full">
+                <span
+                  className="size-8 flex justify-center items-center rounded-full"
+                  style={bgStyle}
+                >
                   <FaCheck color="white" />
                 </span>
                 Forms
               </li>
               <li className="flex items-center gap-5 mb-8">
-                <span className="size-8 flex justify-center items-center bg-orange-400 rounded-full">
+                <span
+                  className="size-8 flex justify-center items-center rounded-full"
+                  style={bgStyle}
+                >
                   <FaCheck color="white" />
                 </span>
                 Automation
               </li>
               <li className="flex items-center gap-5">
-                <span className="size-8 flex justify-center items-center bg-orange-400 rounded-full">
+                <span
+                  className="size-8 flex justify-center items-center rounded-full"
+                  style={bgStyle}
+                >
                   <FaCheck color="white" />
                 </span>
                 Newsletters{" "}
@@ -135,7 +147,10 @@ export const UserView = ({
             <p>sharing insider secrets of the book industry</p>
           </div>
         </div>
-        <div className="mt-20 h-auto rounded-2xl bg-blue-300 p-4 py-20 shadow-lg  flex flex-col justify-center items-center gap-5">
+        <div
+          className="mt-20 h-auto rounded-2xl p-4 py-20 shadow-lg  flex flex-col justify-center items-center gap-5"
+          style={bgStyle}
+        >
           <FaQuoteLeft size={35} color="brown" />
           <h1 className="text-5xl font-bold  text-center text-black">
             {whatToSay}
