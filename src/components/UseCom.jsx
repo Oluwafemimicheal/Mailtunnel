@@ -58,7 +58,6 @@ export const UserView = ({
           <div></div>
           <div className="col-span-3">
             <p className="mb-3">{description}</p>
-
             <div className="flex gap-5 items-center mt-5 mb-3">
               <Button bg="#44b1ff" text={"Start free trial"} />
             </div>
