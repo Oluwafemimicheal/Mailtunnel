@@ -40,11 +40,15 @@ export const UserView = ({
   work = "Am a developer",
   whatYouDo = "my work description",
   whatToSay = "I couldnt have done it without mailtunnel",
+  bg = "#1065eb",
 }) => {
+  const bgStyle = {
+    backgroundColor: bg,
+  };
   return (
     <div className="py-10">
       <div className="w-[1300px] mx-auto ">
-        <span className="uppercase p-2 bg-gray-300  font-bold rounded-sm">
+        <span className="uppercase p-2  font-bold rounded-sm" style={bgStyle}>
           GROW WITH MAILTUNNEL
         </span>
         <div className="grid grid-cols-7 gap-10 mt-5">
