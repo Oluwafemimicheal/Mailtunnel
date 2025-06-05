@@ -67,14 +67,20 @@ export const UserView = ({
         <div className="grid grid-cols-7 gap-10 my-20">
           <div className="flex flex-col justify-between col-span-3">
             <div>
-              <div className="w-[220px] h-[220px] bg-red-400 rounded-md mb-5"></div>
+              <div
+                className="w-[220px] h-[220px] rounded-md mb-5"
+                style={bgStyle}
+              ></div>
               <h3 className="font-bold">{name}</h3>
               <p>{work}</p>
             </div>
             <p>{whatYouDo}</p>
           </div>
           <div></div>
-          <div className="bg-gray-400 rounded-lg h-[610px] col-span-3"></div>
+          <div
+            className="rounded-lg h-[610px] col-span-3"
+            style={bgStyle}
+          ></div>
         </div>
         <div className="grid grid-cols-3 grid-rows-2 gap-5 h-[500px] mt-10 ">
           <div className="row-span-2  rounded-lg bg-white p-8">
