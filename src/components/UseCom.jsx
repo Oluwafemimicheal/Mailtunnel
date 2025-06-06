@@ -172,3 +172,56 @@ export const UserView = ({
     </div>
   );
 };
+
+export const PriceCard = ({
+  heading = "Grow",
+  description = "Reach your audience and turn subscribers into customers",
+  list,
+}) => {
+  return (
+    <div className="p-5 rounded-sm bg-white shadow-sm">
+      <div className="py-4 border-b-2 border-gray-500">
+        <FaCheck className="mb-4" />
+        <h1 className="font-bold  text-3xl mb-4">{heading}</h1>
+        <p>{description}</p>
+      </div>
+      <ul className="mt-10">
+        {!list === "" ? (
+          <li className="flex justify-start items-center gap-5 mb-8">
+            <FaCheck color="white" />
+            <p>{list}</p>
+          </li>
+        ) : null}
+
+        <li className="flex justify-start items-center gap-5 mb-8">
+          <FaCheck color="white" />
+          <p>Unlimited opt-in forms</p>
+        </li>
+        <li className="flex justify-start items-center gap-5 mb-8">
+          <FaCheck color="white" />
+          <p>Landing page & form templates</p>
+        </li>
+        <li className="flex justify-start items-center gap-5 mb-8">
+          <FaCheck color="white" />
+          <p>Newsletter feed & website</p>
+        </li>
+        <li className="flex justify-start items-center gap-5 mb-8">
+          <FaCheck color="white" />
+          <p>Custom domain</p>
+        </li>
+        <li className="flex justify-start items-center gap-5 mb-8">
+          <FaCheck color="white" />
+          <p>List growth reporting</p>
+        </li>
+        <li className="flex justify-start items-center gap-5 mb-8">
+          <FaCheck color="white" />
+          <p>Creator Network</p>
+        </li>
+        <li className="flex justify-start items-center gap-5 mb-8">
+          <FaCheck color="white" />
+          <p>Recommendations</p>
+        </li>
+      </ul>
+    </div>
+  );
+};

@@ -3,7 +3,7 @@ import "swiper/css";
 import "swiper/css/pagination";
 import "swiper/css/navigation";
 import { Pagination, Navigation, Autoplay } from "swiper/modules";
-import { Button, SwiperCard, UserView } from "./UseCom";
+import { Button, PriceCard, SwiperCard, UserView } from "./UseCom";
 import { LiaAccessibleIcon } from "react-icons/lia";
 import { FaAccusoft, FaDashcube } from "react-icons/fa";
 
@@ -123,6 +123,14 @@ export const Hero = () => {
         />
         <UserView bg="#737bd2" />
         <UserView bg="#641967" />
+      </section>
+      <section className="py-20">
+        <div className="w-[1300px] mx-auto grid grid-cols-1 lg:grid-cols-4 gap-5">
+          <PriceCard />
+          <PriceCard />
+          <PriceCard />
+          <PriceCard />
+        </div>
       </section>
       <section className="pb-40">
         <div className="w-[1300px] mx-auto mt-20 h-auto   text-[#1e1e1e] p-16  flex  justify-between items-center gap-10">
