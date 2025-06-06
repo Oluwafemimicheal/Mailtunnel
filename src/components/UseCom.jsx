@@ -31,6 +31,7 @@ export const SwiperCard = () => {
 };
 
 import { FaCheck, FaQuoteLeft } from "react-icons/fa";
+import { MdStackedBarChart } from "react-icons/md";
 export const UserView = ({
   heading = "Lauren used social media and Kit to grow her email list from 500 to 25000",
   description = ` Lauren turned her large social following into a sustainable
@@ -181,20 +182,20 @@ export const PriceCard = ({
   return (
     <div className="p-5 rounded-sm bg-white shadow-sm">
       <div className="py-4 border-b-2 border-gray-500">
-        <FaCheck className="mb-4" />
+        <MdStackedBarChart className="mb-4" />
         <h1 className="font-bold  text-3xl mb-4">{heading}</h1>
         <p>{description}</p>
       </div>
       <ul className="mt-10">
         {!list === "" ? (
           <li className="flex justify-start items-center gap-5 mb-8">
-            <FaCheck color="white" />
+            <FaCheck color="black" />
             <p>{list}</p>
           </li>
         ) : null}
 
         <li className="flex justify-start items-center gap-5 mb-8">
-          <FaCheck color="white" />
+          <FaCheck color="#a796e3" />
           <p>Unlimited opt-in forms</p>
         </li>
         <li className="flex justify-start items-center gap-5 mb-8">
