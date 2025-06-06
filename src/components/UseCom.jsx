@@ -182,8 +182,8 @@ export const PriceCard = ({
   return (
     <div className="p-5 rounded-sm bg-white shadow-sm">
       <div className="py-4 border-b-2 border-gray-500">
-        <MdStackedBarChart className="mb-4" />
-        <h1 className="font-bold  text-3xl mb-4">{heading}</h1>
+        <MdStackedBarChart size={70} className="m-0 p-0 text-blue-700" />
+        <h1 className="font-bold  text-3xl mb-3">{heading}</h1>
         <p>{description}</p>
       </div>
       <ul className="mt-10">
@@ -223,6 +223,21 @@ export const PriceCard = ({
           <p>Recommendations</p>
         </li>
       </ul>
+    </div>
+  );
+};
+
+export const AppCard = () => {
+  return (
+    <div>
+      <div>canva</div>
+      <h1>Canva</h1>
+      <p>
+        Get access to your Canva library natively within the Kit media gallery
+      </p>
+      <a href="#" className="underline">
+        See details
+      </a>
     </div>
   );
 };
