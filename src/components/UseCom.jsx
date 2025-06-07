@@ -32,6 +32,7 @@ export const SwiperCard = () => {
 
 import { FaCheck, FaQuoteLeft } from "react-icons/fa";
 import { MdStackedBarChart } from "react-icons/md";
+import { Doughnut } from "react-chartjs-2";
 export const UserView = ({
   heading = "Lauren used social media and Kit to grow her email list from 500 to 25000",
   description = ` Lauren turned her large social following into a sustainable
@@ -147,6 +148,22 @@ export const UserView = ({
                 </div>
               </li>
             </ul>
+            <Doughnut
+              data={{
+                labels: ["Ads"],
+                datasets: [
+                  {
+                    label: "Count",
+                    data: [200],
+                    backgroundColor: [
+                      "rgba(43, 63,229,0.8)",
+                      "rgba(250,192, 19, 0.8)",
+                      "rgba(253,135, 135, 0.8)",
+                    ],
+                  },
+                ],
+              }}
+            />
           </div>
           <div className="rounded-lg  bg-white text-center p-14">
             <h1 className="text-6xl font-bold mb-5">7 years</h1>
