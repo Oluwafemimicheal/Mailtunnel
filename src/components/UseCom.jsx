@@ -32,7 +32,8 @@ export const SwiperCard = () => {
 
 import { FaCheck, FaQuoteLeft } from "react-icons/fa";
 import { MdStackedBarChart } from "react-icons/md";
-import { Doughnut } from "react-chartjs-2";
+import { Chart as ChartJS } from "chart.js/auto";
+import { Bar, Doughnut, Line } from "react-chartjs-2";
 export const UserView = ({
   heading = "Lauren used social media and Kit to grow her email list from 500 to 25000",
   description = ` Lauren turned her large social following into a sustainable
@@ -130,7 +131,7 @@ export const UserView = ({
             <h1 className="text-6xl font-bold mb-5">25,000+</h1>
             <p>subscribers learning about becoming published authors</p>
           </div>
-          <div className="row-span-2  rounded-lg bg-white p-8">
+          <div className="row-span-2  rounded-lg bg-white p-8 overflow-hidden">
             <h1 className="text-6xl font-bold">Revenue breakdown</h1>
             <ul className="mt-10">
               <li className="flex items-center gap-2 mb-3">
@@ -150,11 +151,11 @@ export const UserView = ({
             </ul>
             <Doughnut
               data={{
-                labels: ["Ads"],
+                labels: ["Ads", "Support", "items"],
                 datasets: [
                   {
                     label: "Count",
-                    data: [200],
+                    data: [100, 150, 200],
                     backgroundColor: [
                       "rgba(43, 63,229,0.8)",
                       "rgba(250,192, 19, 0.8)",
