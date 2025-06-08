@@ -149,22 +149,24 @@ export const UserView = ({
                 </div>
               </li>
             </ul>
-            <Doughnut
-              data={{
-                labels: ["Ads", "Support", "items"],
-                datasets: [
-                  {
-                    label: "Count",
-                    data: [100, 150, 200],
-                    backgroundColor: [
-                      "rgba(43, 63,229,0.8)",
-                      "rgba(250,192, 19, 0.8)",
-                      "rgba(253,135, 135, 0.8)",
-                    ],
-                  },
-                ],
-              }}
-            />
+            <div className="w-[200px] h-[200px]">
+              <Doughnut
+                data={{
+                  // labels: ["Ads", "Support", "items"],
+                  datasets: [
+                    {
+                      label: "Count",
+                      data: [100, 150, 200],
+                      backgroundColor: [
+                        "rgba(43, 63,229,0.8)",
+                        "rgba(250,192, 19, 0.8)",
+                        "rgba(253,135, 135, 0.8)",
+                      ],
+                    },
+                  ],
+                }}
+              />
+            </div>
           </div>
           <div className="rounded-lg  bg-white text-center p-14">
             <h1 className="text-6xl font-bold mb-5">7 years</h1>
