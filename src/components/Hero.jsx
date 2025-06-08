@@ -5,7 +5,7 @@ import "swiper/css/navigation";
 import { Pagination, Navigation, Autoplay } from "swiper/modules";
 import { AppCard, Button, PriceCard, SwiperCard, UserView } from "./UseCom";
 import { LiaAccessibleIcon } from "react-icons/lia";
-import { FaAccusoft, FaDashcube } from "react-icons/fa";
+import { FaAccusoft, FaChartArea, FaDashcube } from "react-icons/fa";
 
 export const Hero = () => {
   return (
@@ -139,7 +139,7 @@ export const Hero = () => {
             </div>
           </div>
           <div className="grid grid-cols-1 lg:grid-cols-4 gap-5 mt-20">
-            <PriceCard />
+            <PriceCard icon={<FaChartArea size={80} />} />
             <PriceCard />
             <PriceCard />
             <PriceCard />

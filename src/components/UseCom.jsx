@@ -30,7 +30,7 @@ export const SwiperCard = () => {
   );
 };
 
-import { FaCheck, FaQuoteLeft } from "react-icons/fa";
+import { FaCheck, FaIcons, FaQuoteLeft } from "react-icons/fa";
 import { MdStackedBarChart } from "react-icons/md";
 import { Chart as ChartJS } from "chart.js/auto";
 import { Bar, Doughnut, Line } from "react-chartjs-2";
@@ -194,11 +194,13 @@ export const PriceCard = ({
   heading = "Grow",
   description = "Reach your audience and turn subscribers into customers",
   list,
+  icon,
 }) => {
   return (
     <div className="p-5 rounded-sm bg-white shadow-sm">
       <div className="py-4 border-b-2 border-gray-500">
-        <MdStackedBarChart size={70} className="m-0 p-0 text-blue-700" />
+        {icon ? icon : <FaIcons size={80} />}
+
         <h1 className="font-bold  text-3xl mb-3">{heading}</h1>
         <p>{description}</p>
       </div>
