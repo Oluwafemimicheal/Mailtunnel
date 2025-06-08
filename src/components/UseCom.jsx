@@ -156,12 +156,8 @@ export const UserView = ({
                   datasets: [
                     {
                       label: "Count",
-                      data: [100, 150, 200],
-                      backgroundColor: [
-                        "rgba(43, 63,229,0.8)",
-                        "rgba(250,192, 19, 0.8)",
-                        "rgba(253,135, 135, 0.8)",
-                      ],
+                      data: [25, 75],
+                      backgroundColor: ["rgba(85, 92, 151, 0.8)", `${bg}`],
                     },
                   ],
                 }}
