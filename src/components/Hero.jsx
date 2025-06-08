@@ -6,12 +6,25 @@ import { Pagination, Navigation, Autoplay } from "swiper/modules";
 import { AppCard, Button, PriceCard, SwiperCard, UserView } from "./UseCom";
 import { LiaAccessibleIcon } from "react-icons/lia";
 import { FaAccusoft, FaChartArea, FaDashcube } from "react-icons/fa";
+import ScrollReveal from "scrollreveal";
 
 export const Hero = () => {
+  ScrollReveal().reveal(".home", {
+    distance: "150%",
+    origin: "left",
+    delay: 5,
+    opacity: 1,
+  });
+  ScrollReveal().reveal(".sec", {
+    distance: "150%",
+    origin: "right",
+    delay: 5,
+    opacity: 1,
+  });
   return (
     <div>
       {/* Benner section */}
-      <section className="bg-gray-50">
+      <section className="home bg-gray-50">
         <div className="w-[1300px] mx-auto  h-auto py-20 gap-10 lg:py-20 lg:h-auto flex-col lg:flex-row flex items-start relative">
           <div className="w-full lg:w-5/12">
             <h1 className="lg:text-[4rem] text-5xl font-sans  text-[#1E1E1E] font-bold leading-16 mb-5">
@@ -36,7 +49,7 @@ export const Hero = () => {
       </section>
 
       {/* Other section */}
-      <section className="py-30 bg-[#1e1e1e] h-auto">
+      <section className="sec py-30 bg-[#1e1e1e] h-auto">
         <div className="w-[1300px] mx-auto grid grid-rows-2 gap-5 pb-10">
           <h1 className="text-[8rem] text-white font-bold leading-28">
             Build a business <br />
