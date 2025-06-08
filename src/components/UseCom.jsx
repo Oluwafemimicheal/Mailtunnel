@@ -149,15 +149,15 @@ export const UserView = ({
                 </div>
               </li>
             </ul>
-            <div className="w-[200px] h-[200px]">
+            <div className="w-[150px] h-[150px]">
               <Doughnut
                 data={{
-                  // labels: ["Ads", "Support", "items"],
                   datasets: [
                     {
                       label: "Count",
                       data: [25, 75],
                       backgroundColor: ["rgba(85, 92, 151, 0.8)", `${bg}`],
+                      borderWidth: 5,
                     },
                   ],
                 }}
