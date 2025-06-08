@@ -42,7 +42,7 @@ const Footer = () => {
       </div>
       <div className="container mx-auto mt-10 flex justify-between">
         <small className="text-gray-400">
-          easyfood @Copyright {new Date().getFullYear()}
+          mailtunnel @Copyright {new Date().getFullYear()}
         </small>
         <small className="text-gray-400">Terms and Condition.</small>
       </div>
